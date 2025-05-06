@@ -1,0 +1,76 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to top right, #ffe6f0, #ccffff);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: background 1s ease;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff3399;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #yesBtn {
+    background-color: #66ff66;
+  }
+  
+  #noBtn {
+    background-color: #ff6666;
+    position: absolute;
+  }
+  
+  .gf-pic {
+    display: none;
+  }
+  
+  .emoji {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 5s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
